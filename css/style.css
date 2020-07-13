@@ -44,7 +44,6 @@ h1 {
     font-weight: 600;
     color: #192b59;
     line-height: 1.2;
-
 }
 
 .title-40 span {
@@ -54,8 +53,7 @@ h1 {
     letter-spacing: 3.5px;
     font-weight: 800;
     color: #1085e4;
-    text-transform: uppercase;
-   
+    text-transform: uppercase;   
 }
 
 .page-stat .title-h2, .page-screen .title-h2 {
@@ -72,6 +70,20 @@ h1 {
     margin: 0 auto;
 }
 
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 305px;
+}
+
+.logo {
+    display: block;
+    width: 181px;
+    height: 49px;
+    background-image: url(../img/logo.png);
+}
+
 .nav {
     font-size: 12px;
     font-weight: 700;
@@ -83,13 +95,25 @@ h1 {
 }
 
 .nav>li {
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .nav-item {
     color: #6e7ea9;
+    letter-spacing: 2px;
 }
 
+.screen-img {
+    display: block;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    width: 895px;
+    height: 740px;
+    position: absolute;
+    right: 0;
+    top: 189px;
+
+}
 
 .btn-primary {
     color: #fff;
@@ -99,13 +123,13 @@ h1 {
     text-transform: uppercase;
     background-color: #1085e4;
     border: 1px solid #1085e4;
-    padding: 20px 40px;
+    padding: 20px 60px;
     border-radius:30px;
 }
 
 .btn-primary:hover {
     color: #1085e4;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .btn-secondary {
@@ -129,6 +153,12 @@ h1 {
      letter-spacing: 1.7px;
  }
 
+ .btn-info:hover{
+    color: #fff;
+    background-color: #94b4cc;
+    border: 1px solid #94b4cc;
+}
+
  .btn-info {
      color: #8085b1;
      font-size: 12px;
@@ -137,12 +167,51 @@ h1 {
      text-transform: uppercase;
      background-color: transparent;
      border: 1px solid #dce1e5;
-     padding: 20px 40px;
+     padding: 20px 60px;
      border-radius:30px;
  }
 
  .btn-group a + a {
      margin-left: 15px;
+ }
+
+ .list-company {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 1100px;
+     margin: 0 auto;
+ }
+
+ .list-comoany-item {
+     display: block;
+ }
+
+ .company-one {
+     background-image: url(../img/icon1.png);
+     flex-basis: 198px;
+     height: 58px;
+ }
+
+ .company-two {
+    background-image: url(../img/icon2.png);
+    flex-basis: 200px;
+    height: 69px;
+ }
+
+ .company-fhree {
+    background-image: url(../img/icon3.png);
+    flex-basis: 200px;
+    height: 47px;
+ }
+ .company-four {
+    background-image: url(../img/icon4.png);
+    flex-basis: 200px;
+    height: 69px;
+
  }
 
  .grid h2 {
@@ -200,25 +269,108 @@ h1 {
  .box-price {
      display: flex;
      justify-content: space-between;
+     margin-top: 80px;
  }
 
  .box-price-item {
      background-color: #f5faff;
+     flex-basis: 32%;
+     position: relative;
+     padding: 90px 0 96px 0;
+
+
  }
+
+.box-price-item h3 {
+    color: #000958;
+    font-size: 70px;
+    letter-spacing: -1px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.box-price-item h3 span {
+    font-size: 20px;
+}
+
+
+
+
+.box-price-item p {
+    font-size: 14px;
+    color: #0084ff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+}
+
+.box-price-item:first-child h3 {
+    margin-bottom: 35px;
+}
+
+.box-price-item h3 span:first-child {
+    color: #000958;
+}
+
+.box-price-item h3 span:last-child {
+    color: #7b8ab2;
+}
 
  .box-price-item.active  {
      background-color:  #192b59;
      color: #fff;
  }
 
+ .box-price-item.active h3 {
+     color: #fff;
+ }
+
+ .box-price-item.active h3 span:first-child {
+     color: #fff;
+ }
+
  .box-price-item ul{
      list-style-type: none;
      padding-left: 0;
+     margin-top: 34px;
+     margin-bottom: 59px;
+     font-size: 14px;
  }
 
+ .box-price-item ul>li {
+    margin-bottom: 14px;
+}
+
+.box-price-item::after {
+    content: "";
+    width: 58px;
+    height: 100%;
+    background-image: url(../img/triangle.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.box-price-item.active::after {
+    display: none;
+}
 
 
 /* page */
+
+.page-header {
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 53px 0 330px 0;
+}
+
+.page-company {
+    background-image: url(../img/line1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 106px 0 99px;
+}
 
  .page-stat, .page-screen {
      background-color: #edf6ff;  
@@ -233,3 +385,19 @@ h1 {
  .page-screen {
     padding: 116px 0 0 0;
  }
+
+ .page-subscribe {
+    background: rgba(10,32,144,1);
+    background: -moz-linear-gradient(left, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
+    background: -webkit-linear-gradient(left, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: -o-linear-gradient(left, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: -ms-linear-gradient(left, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: linear-gradient(to right, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
+ }
+
+
+
+
+ 

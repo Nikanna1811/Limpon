@@ -344,7 +344,7 @@ h1 {
 }
 
 
-.page-softwere-icon {
+.page-software-icon {
     display: block;
     background-image: url(../img/icon11.png);
     width: 117px;
@@ -355,20 +355,21 @@ h1 {
 
 .page-software {
     padding: 60px 0 0;
+    
 
 }
 
-.page-softwere-flex {
+.page-software-flex {
     display: flex;
     justify-content: flex-end;
     
 }
 
-.page-softwere-flex>div {
+.page-software-flex>div {
     flex-basis: 50%;
 }
 
-.page-softwere .title-h2 {
+.page-software .title-h2 {
     font-weight: 766px;
     margin-top: 12px;
     margin-bottom: 26px;
@@ -381,6 +382,12 @@ h1 {
     overflow-y: scroll;
 
 }
+
+.page-software-list::-webkit-scrollbar { width: 4px; height: 4px;}
+.page-software-list::-webkit-scrollbar-button {  background-color: #1085e4; }
+.page-software-list::-webkit-scrollbar-track-piece {  background-color: #f3f6ff;}
+.page-software-list::-webkit-scrollbar-thumb { height: 50px; background-color: #1085e4; border-radius: 10px;}
+
 
 .page-software-list dt {
     font-weight: 700;
@@ -396,6 +403,10 @@ h1 {
 
 }
 
+
+.page-app-text {
+    font-size: 16px;
+}
 
  .list-stat {
      display: flex;
@@ -592,7 +603,7 @@ h1 {
  .page-stat, .page-screen {
      background-color: #edf6ff;  
  }
-.page-softwere {
+.page-software {
     padding: 109px 0 156px 0;
 }
 

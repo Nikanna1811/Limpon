@@ -344,7 +344,19 @@ h1 {
 }
 
 
-.page-software-icon {
+.software-pic {
+    display: block;
+    width: 937px;
+    height: 986px;
+    background-image: url(../img/software-pic.png);
+    background-size: 100% 100%;
+    background-position: 0 0;
+    position: absolute;
+    left: 117px;
+    bottom: -39px;
+}
+
+.settings-icon {
     display: block;
     background-image: url(../img/icon11.png);
     width: 117px;
@@ -369,7 +381,7 @@ h1 {
     flex-basis: 50%;
 }
 
-.page-software .title-h2 {
+.page-software .title-h2,  .page-analytics .title-h2 {
     font-weight: 766px;
     margin-top: 12px;
     margin-bottom: 26px;
@@ -400,12 +412,71 @@ h1 {
     margin-bottom: 50px;
     font-size: 14px;
     line-height: 1.8;
+    padding-right: 20px;
+
+}
+
+.page-app-text {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c4d2dd;
+}
+
+.page-app-list {
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.page-app-list>li {
+    display: inline-block;
+}
+
+.page-app-list>li>a {
+    background-image: url(../img/app.png);
+    display: block;
+    background-repeat: no-repeat;
+    width: 185px;
+    height: 77px;
 
 }
 
 
-.page-app-text {
-    font-size: 16px;
+.page-app-list>li>a.page-app-android {
+    background-position: 0 0;
+}
+
+.page-app-list>li>a.page-app-ios {
+    background-position: -191px 0 ;
+}
+
+
+.content-app {
+    width: 55%;
+    margin-bottom: ;
+}
+
+.video-app {
+    position: absolute;
+    top: -57px;
+    right: -172px;
+
+}
+
+.flex-analytics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.page-analytics-text {
+    margin-bottom: 54px;
+}
+
+.flex-analytics>div {
+    flex-basis: 53%;
 }
 
  .list-stat {
@@ -630,7 +701,17 @@ h1 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
  }
 
+.page-app {
+    padding: 69px 0 92px 0;
+}
 
+.page-app .wrap {
+    position: relative;
+}
 
-
- 
+ .page-analytics {
+     background-image: url(../img/bg-analytics.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 117px 0 137px 0;
+ }
